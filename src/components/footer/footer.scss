@@ -1,0 +1,112 @@
+$main_color: #000412;
+$secondary_color: #061726;
+$glass:rgba(196, 196, 196, 0.19);
+$landing_gradient: linear-gradient(180deg, #000000 0%, rgba(0, 25, 49, 0.93) 99.99%);
+$main_button_color:#149DBB;
+$team_cards:rgba(196, 196, 196, 0.1);
+$heading:#fff;
+$secondary_heading: rgba(255,255,255,80%);
+
+
+@mixin main_button {
+    background-color: $main_button_color;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    width: 30%;
+    cursor: pointer;
+    border-radius:6px;
+    font-size: 16px;
+}
+
+
+.footer_outer{
+    width: 90%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.footer_inner{
+    display: flex;
+    justify-content: space-around;
+
+    p{
+        color: $secondary_heading;
+        margin-top: 20px;
+        padding-right: 10%;
+        line-height: 35px;
+    }
+}
+
+
+.left_section_heading{
+    display:flex;
+    align-items: center;
+
+    h2{
+        font-weight: 500;
+        color: #fff;
+    }
+
+    img{
+        width: 60px;
+    }
+}
+
+
+.left_section{
+    width: 50%;
+}
+
+.chat_button{
+    @include main_button();
+    width: 50% !important;
+    margin-top: 30px;
+}
+
+.right_section{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.heading_footer{
+
+    margin:0 40px;
+
+    h2{
+        color: $heading;
+        font-weight: 400;
+    }
+
+    ul{
+        margin-top:30px;
+    }
+
+    li{
+        color: $secondary_heading;
+        background-color: transparent !important;
+        padding: 0;
+        font-weight: 400;
+        margin:0 !important;
+        width: 100%;
+        line-height: 35px;
+    }
+}
+
+@media (max-width:763px){
+
+    .footer_inner{
+        display: block;
+}
+
+.left_section{
+    width: 100%;
+}
+
+.right_section{
+display: none;
+}
+}

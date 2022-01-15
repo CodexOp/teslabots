@@ -1,0 +1,25 @@
+$main_color: #000412;
+$secondary_color: #061726;
+$glass:rgba(196, 196, 196, 0.19);
+$landing_gradient: linear-gradient(180deg, #000000 0%, rgba(0, 25, 49, 0.93) 99.99%);
+$main_button:#149DBB;
+$team_cards:rgba(196, 196, 196, 0.1);
+$heading:#fff;
+$secondary_heading: rgba(255,255,255,80%);
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body, html, #root{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #000412;
+    scroll-behavior: smooth;
+
+}

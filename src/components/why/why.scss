@@ -1,0 +1,113 @@
+$main_color: #000412;
+$secondary_color: #061726;
+$glass:rgba(196, 196, 196, 0.19);
+$landing_gradient: linear-gradient(180deg, #000000 0%, rgba(0, 25, 49, 0.93) 99.99%);
+$main_button_color:#149DBB;
+$team_cards:rgba(196, 196, 196, 0.1);
+$heading:#fff;
+$secondary_heading: rgba(255,255,255,80%);
+
+.whyus{
+    height: auto;
+    background-color: $secondary_color;
+}
+
+.full_width{
+    width: 80%;
+    margin:auto;
+    padding-top: 80px !important;
+
+    h2{
+        color: $heading;
+        font-size: 32px;
+
+    }
+}
+
+.main_whyus{
+    width: 80%;
+    margin:auto;
+    display: flex;
+
+    p{
+        color:$secondary_heading;
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+
+.whywe_blocks{
+    z-index: 100;
+    width: 50%;
+}
+
+.whywe_content{
+    width: 50%;
+    margin-top: 20px;
+    z-index: 10;
+}
+
+.icon_box img{
+width: 50px;
+}
+
+.block{
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255,255,255, 0.1);
+    width: 80%;
+    margin:auto;
+    margin-top: 20px !important;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.title_box{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+@media(max-width:1400px){
+    .main_whyus{
+        width: 80%;
+        margin:auto;
+        display: flex;
+    
+        p{
+            color:$secondary_heading;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+
+@media(max-width:763px){
+    .main_whyus{
+        display: block;
+
+
+        p{
+            font-size: 18px;
+        }
+        
+    }
+
+    .whywe_content{
+        width: 100%;
+    }
+
+    .whywe_blocks{
+      width: 100%;
+      z-index: 10;
+     }
+
+    .block{
+      width: 100%;
+     }
+}
+
